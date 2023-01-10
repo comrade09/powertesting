@@ -105,18 +105,18 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 HELP_MSG = "Click the button below to get help menu in your pm hihi~"
-START_MSG = "*Hie Onichwannnn~ UwU* I am well and alive ;)"
+START_MSG = "*Hi Onichwannnn~ UwU* I am  alive ;)"
 
-HELP_IMG = "https://telegra.ph/file/9dfcdab5244a61b323210.jpg"
-START_IMG = "https://telegra.ph/file/eb8617465e7a62650f862.jpg"
+HELP_IMG = "https://telegra.ph/file/d792c5fd7846d056f6510.jpg"
+START_IMG = "https://telegra.ph/file/d792c5fd7846d056f6510.jpg "
 
 PM_START_TEXT = f"""
-  ⫸ [{BOT_NAME}](https://telegra.ph/file/7ba6536e75495cdc6ceb1.jpg) ⫷
-Konnichiwa, I am {BOT_NAME}
- 
-I am an Anime themed group management bot with some fun extras ;)
+ Hi [{BOT_NAME}](https://telegra.ph/file/d792c5fd7846d056f6510.jpg) 
+Hello there, The my name is  {BOT_NAME} ✨
+I am an Anime themed group management with some fun features.
+Make sure you read About Me section below ;)
 
-Want to see my powers? hehe, use /help or commands button below."""
+Want to see my powers? use /help or commands button below."""
 
 
 GROUP_START_TEXT = """
@@ -127,38 +127,33 @@ Haven't slept since: {}
 buttons = [
     [
         InlineKeyboardButton(
-            text="Summon Meow ➕", url=f"t.me/{BOT_USERNAME}?startgroup=true"
+            text="Add Me to your group ", url=f"t.me/{BOT_USERNAME}?startgroup=true"
         )
     ],
     [
-        InlineKeyboardButton(text="📓 Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="Commands 📓", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Source 🌐", url="https://github.com/ArshCypherZ/HWBot"
+            text="About Me ⚡", url="https://t.me/tpx_Bot"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="Support 🥂", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="Support ✨", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
         InlineKeyboardButton(
-            text="Updates 🏃‍♂️", url=f"https://t.me/{UPDATES_CHANNEL}"
+            text="Updates 📡 ", url=f"https://t.me/{UPDATES_CHANNEL}"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-*Main* commands available:
-• /help: PM's you this message.
-• /help <module name>: PM's you info about that module.
-• /donate: information on how to donate!
-• /settings:
-   - in PM: will send you your settings for all supported modules.
-   - in a group: will redirect you to pm, with all that chat's settings.
-• You can also navigate between the help menu by clicking on left-right arrow.   
+Hey there... I'm Power ✨
+I have lots of features like AI Chatbot, Anime, Music, Notes, Filters, Fun and many others useful commands!
+Click on the buttons below to get documentation about specific modules..
 """
 
-DONATE_STRING = """PM @Arsshh for donating :)"""
+DONATE_STRING = """PM @Ath2023 for donating :)"""
 
 
 IMPORTED = {}
@@ -276,29 +271,11 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption=f"<code>OwO Onichan! I am ready to play, hehe~</code>: <code>{uptime}</code>",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="Support ✨",
-                            url=f"https://telegram.dog/{SUPPORT_CHAT}",
-                        ),
-                        InlineKeyboardButton(
-                            text="Updates 🌻",
-                            url=f"https://telegram.dog/{UPDATES_CHANNEL}",
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="Source 🌐",
-                            url="https://github.com/ArshCypherZ/HWBOT",
-                        )
-                    ],
-                ]
-            ),
-        )
+            caption=f"<code>Power Is Alive Now ✨, hehe~</code>: <code>{uptime}</code>",
+            parse_mode=ParseMode.HTML
+            
+              
+  
 
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
