@@ -111,8 +111,8 @@ HELP_IMG = "https://telegra.ph/file/d792c5fd7846d056f6510.jpg"
 START_IMG = "https://telegra.ph/file/d792c5fd7846d056f6510.jpg "
 
 PM_START_TEXT = f"""
- Hi [{BOT_NAME}](https://telegra.ph/file/d792c5fd7846d056f6510.jpg) 
-Hello there, The my name is  {BOT_NAME} ✨
+ Hi am [{BOT_NAME}](https://telegra.ph/file/d792c5fd7846d056f6510.jpg) 
+Hello there,  My name is  {BOT_NAME} ✨
 I am an Anime themed group management with some fun features.
 Make sure you read About Me section below ;)
 
