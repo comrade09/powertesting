@@ -272,7 +272,7 @@ def start(update: Update, context: CallbackContext):
         update.effective_message.reply_photo(
             START_IMG,
             caption=f"<code>Power Is Alive Now ✨, hehe~</code>: <code>{uptime}</code>",
-            parse_mode=ParseMode.HTML
+            parse_mode=ParseMode.HTML,)
             
               
   
