@@ -30,7 +30,7 @@ HIMAWARI = "https://telegra.ph/file/9dfcdab5244a61b323210.jpg"
 async def awake(event):
   STB = event.sender.first_name
   STB = f"**I m {BOT_NAME}** \n\n" + "**I'm Working Properly**\n\n"
-  STB += "**Python Version : 3.10.6**\n\n"
+  STB += "**My Owner @Ath2023**\n\n"
   STB += "**python-Telegram-Bot : 13.12**\n\n"
   BUTTON = [[Button.url("Support", "https://t.me/{SUPPORT_CHAT}"), Button.url("Updates", "https://t.me/{UPDATES_CHANNEL}")]]
   await tbot.send_file(event.chat_id, HIMAWARI, caption=STB,  buttons=BUTTON)
